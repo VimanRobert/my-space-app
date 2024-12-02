@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MySpaceApp</string>
+    <string name="support_email">robert.viman4@gmail.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reset_password_email">You will receive an email to reset the password. Check the mailbox.</string>
+    <string name="subject_message_support_team">I am requiring assistance</string>
+    <string name="plain_text">Please insert a text message!</string>
+    <string name="complain_message_title">Need any support ? write bellow your complains about the application</string>
+    <string name="complains_message_hint">Write your complains here</string>
+    <string name="change_password_button">change password</string>
+    <string name="change_password_title">Press the below button to send an email to change your password</string>
+    <string name="title_info">info</string>
+    <string name="title_settings">settings</string>
+    <string name="title_log_out">log out</string>
+
+</resources>

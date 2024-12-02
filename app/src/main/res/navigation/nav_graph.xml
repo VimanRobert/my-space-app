@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/logInFragment">
+
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.myspaceapp.auth.LogInFragment"
+        android:label="log_in_fragment"
+        tools:layout="@layout/log_in_fragment" >
+        <action
+            android:id="@+id/action_logInFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_authenticateFragment"
+            app:destination="@id/authenticateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authenticateFragment"
+        android:name="com.example.myspaceapp.auth.AuthenticateFragment"
+        android:label="authenticate_fragment"
+        tools:layout="@layout/authenticate_fragment" >
+        <action
+            android:id="@+id/action_authenticateFragment_to_logInFragment"
+            app:destination="@id/logInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.myspaceapp.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_documentsFragment"
+            app:destination="@id/documentsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_photosFragment"
+            app:destination="@id/photosFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_othersFragment"
+            app:destination="@id/othersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/documentsFragment"
+        android:name="com.example.myspaceapp.database.DocumentsFragment"
+        android:label="documents_fragment"
+        tools:layout="@layout/documents_fragment" >
+        <action
+            android:id="@+id/action_documentsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.example.myspaceapp.database.PhotosFragment"
+        android:label="photos_fragment"
+        tools:layout="@layout/photos_fragment" >
+        <action
+            android:id="@+id/action_photosFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="com.example.myspaceapp.database.NotesFragment"
+        android:label="notes_fragment"
+        tools:layout="@layout/notes_fragment" >
+        <action
+            android:id="@+id/action_notesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/othersFragment"
+        android:name="com.example.myspaceapp.database.OthersFragment"
+        android:label="others_fragment"
+        tools:layout="@layout/others_fragment" >
+        <action
+            android:id="@+id/action_othersFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>

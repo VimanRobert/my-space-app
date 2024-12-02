@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings.SettingsFragment">
+
+    <TextView
+        android:id="@+id/change_password_title"
+        android:layout_width="339dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/change_password_title"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_change_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_change_password"
+        android:layout_width="247dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="84dp"
+        android:text="@string/change_password_button"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/complain_message_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/complain_message_title"
+        android:layout_width="333dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="start"
+        android:text="@string/complain_message_title"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/complain_message_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.371"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/complain_message_text"
+        android:layout_width="353dp"
+        android:layout_height="209dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="@string/complains_message_hint"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button_send_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_send_email"
+        android:layout_width="266dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="64dp"
+        android:text="sent email"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
